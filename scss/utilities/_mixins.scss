@@ -1,0 +1,7 @@
+
+@mixin productdesc($color, $fontSize, $textAlign, $fontWeight) {
+    color: $color;
+    font-size: $fontSize;
+    text-align: $textAlign;
+    font-weight: $fontWeight;
+}

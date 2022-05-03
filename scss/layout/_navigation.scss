@@ -1,0 +1,93 @@
+nav {
+    grid-area: menu;
+    line-height: 40px;
+    padding: 50px 20px;
+}
+
+.menu {
+    text-align: center;
+    background-color: $primario;
+    display: flex;
+    flex-direction: column;
+    a {
+        color: $oscuro;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+#navegacionMenu {
+    background-color: $primario;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+#navegacionMenu a {
+    background-color: white;
+    color: $primario;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    nav {
+        grid-area: menu;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        background-color: $primario;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 10px;
+        background-color: $primario;
+        display: flex;
+        flex-direction: row;
+        a {
+            background-color: $primario;
+        }
+    }
+
+    #navegacionMenu {
+        background-color: $primario;
+        padding: 10px 20px;
+        a {
+            background-color: $primario;
+            color: white;
+        }
+    }
+}
+
+/*desktop */
+
+@media (min-width: 1024px) {
+    nav {
+        grid-area: menu;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        background-color: $primario;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 10px;
+        background-color: $primario;
+        display: flex;
+        flex-direction: row;
+        a {
+            background-color: $primario;
+        }
+    }
+
+    #navegacionMenu {
+        background-color: $primario;
+        padding: 10px 20px;
+        a {
+            background-color: $primario;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "sass-ii-ricardo-falcon",
+  "version": "1.0.0",
+  "description": "Cookies.arg es una tienda online ubicada en Buenos Aires. Hacemos Galletas estilo americanas, chewy, chunky, cakey, tambien otros productos de Pasteleria, Productos artesanales hechos con cariño",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Falcon",
+  "license": "ISC"
+}

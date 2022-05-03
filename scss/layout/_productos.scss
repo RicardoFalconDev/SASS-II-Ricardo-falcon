@@ -1,0 +1,80 @@
+/*productos*/
+
+.productocookies {
+    background-color: white;
+    color: $claro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.circulocookies {
+    height: 18rem;
+    width: 18rem;
+    background-color: #FF8080;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 250px;
+    }
+}
+
+/*APLICANDO EXTEND*/
+
+.circulocookies2 {
+    @extend .circulocookies;
+    background-color: #C0EDA6;
+   
+}
+
+.circulocookies3 {
+    @extend .circulocookies;
+    background-color: #FFF7BC; 
+}
+
+
+.divdescripcionproductos {
+    margin: 1rem 1.5rem;
+}
+
+
+/*APLICANDO MIXINS*/
+
+.productName {
+    @include productdesc(black, 36px, center, 700);
+}
+
+.productDescrition {
+    @include productdesc(black, 22px, center, 400);
+}
+
+.productPresentation {
+    @include productdesc(rgb(61, 59, 59), 1rem, center, 380);
+}
+
+.productPrice {
+    @include productdesc(black, 23px, center, 700);
+}
+
+/*Aplicando Mapa*/
+
+$idProductos: (
+    area: productos,
+    flexible: flex,
+    flow: column nowrap,
+    fondo: white,
+    negro: #000
+);
+
+#productos {
+    grid-area: map-get($idProductos,area);
+    display: map-get($idProductos,flexible);
+    flex-flow: map-get($idProductos,flow);
+    background-color: map-get($idProductos,fondo);
+    color: map-get($idProductos,negro);
+}
+
