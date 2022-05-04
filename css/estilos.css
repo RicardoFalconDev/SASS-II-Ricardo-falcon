@@ -1292,12 +1292,20 @@ button:active {
     height: 90vh;
   }
   header h2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     font-size: 3.5em;
     margin-top: 1em;
     text-shadow: 1px 1px 5px #DF5E5E;
     color: white;
   }
   header h1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     font-size: 5em;
     padding: 0 200px;
     text-shadow: 1px 1px 5px #DF5E5E;
